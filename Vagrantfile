@@ -48,7 +48,7 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.synced_folder ".", "/vagrant", disabled: true
-  config.vbguest.auto_update = false  
+  config.vbguest.auto_update = true
 
   config.vm.define "swarm-1" do |config|
     config.vm.hostname = "swarm-1"

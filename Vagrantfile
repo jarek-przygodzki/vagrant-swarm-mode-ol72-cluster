@@ -26,6 +26,9 @@ EOF
 
 systemctl daemon-reload && systemctl restart docker
 
+# Don't know why, by interface is down on guest when 'vboxmanage list hostonlyifs' reports it's up !
+ifup enp0s8
+
 SCRIPT
 
 
